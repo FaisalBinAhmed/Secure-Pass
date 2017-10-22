@@ -1,0 +1,35 @@
+﻿<Page x:Name="rootpage"
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+      
+      >
+    
+    <Page.BottomAppBar>
+        <CommandBar x:Name="Appbar">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            
+            <AppBarButton Click="back" x:Name="appBarButton" Icon="Back" Label="Back"/>
+            <AppBarButton Click="OneD" Icon="SyncFolder" Label="Save to Onedrive"/>
+            <AppBarButton Click="library" Icon="Library" Label="Vault"/>
+            <AppBarButton Click="Settingsbutton" Icon="Setting" Label="Settings"/>
+            
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+        <ScrollViewer>
+        <StackPanel Name="stack1" Background="#0e0d14">
+        <Frame Name="myframe">
+            
+        </Frame>
+        
+    </StackPanel>
+    </ScrollViewer>
+    
+</Page>
